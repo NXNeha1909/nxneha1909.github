@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CricketIQ Quiz</title>
+  <link rel="stylesheet" href="styling.css"/>
+</head>
+<body>
+
+  <nav>
+    <a href="indexxx.html" class="logo"> CricketIQ</a>
+    <ul>
+      <li><a href="indexxx.html">Home</a></li>
+      <li><a href="Rules.html">Rules</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="players.html">Players</a></li>
+    </ul>
+  </nav>
+
+   <div class="page-header">
+    <h1> Cricket quiz</h1>
+    <p>Start the given quiz below</p>
+  </div>
+
+ 
+ <div class="quiz-wrapper">
+    <div class="box" id="quizBox">
+      <div class="count"    id="count"></div>
+      <div class="question" id="question"></div>
+      <div class="options"  id="options"></div>
+      <div class="feedback" id="feedback"></div>
+      <button class="next"  id="nextBtn" onclick="next()">Next</button>
+    </div>
+
+    <div class="box score" id="scoreBox">
+      <h2>Done!</h2>
+      <div class="num" id="finalScore"></div>
+      <p id="msg"></p>
+      <button onclick="start()">Play Again</button>
+    </div>
+  </div>
+
+   <footer>
+    <p>Made with lots of efforts | CricketIQ 2026</p>
+  </footer>
+ 
+  <script src="javas.js"></script>
+  <script>start();</script>
+
+</body>
+</html>
